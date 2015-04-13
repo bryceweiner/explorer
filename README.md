@@ -28,7 +28,7 @@ Create databse:
 
 Create user with read/write access:
 
-    > db.createUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
+    > db.addUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
 
 ### Get the source
 
