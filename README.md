@@ -1,13 +1,17 @@
-Iquidus Explorer - 1.5.2
+Iquidus Explorer - 1.6.0
 ================
 
 An open source block explorer written in node.js.
 
 ### See it in action
 
-*  [Jumbucks Explorer](http://explorer.getjumbucks.com) - Version 1.5.2 running with Jumbucks (PoS);
-*  [Phalanx Explorer](http://pxl.iquidus.co.nz) - Version 1.5.2 running with Phalanx (PoW)
-*  [Vanillacoin Explorer](https://blockchain.vanillacoin.net/) - running with Vanillacoin  
+*  [Jumbucks](http://explorer.getjumbucks.com)
+*  [Phalanx](http://pxl.iquidus.co.nz)
+*  [Vanillacoin](https://blockchain.vanillacoin.net/)
+*  [Coven](http://cov.iquidus.co.nz)
+*  [OKCash](http://okcash.explorer.rocks/)
+*  [Neoscoin](http://infernopool.com:8080/)
+
 **note: If you would like your instance mentioned here contact me**
 
 ### Requires
@@ -16,7 +20,7 @@ An open source block explorer written in node.js.
 *  mongodb 2.6.x
 *  *coind
 
-### Create datbase
+### Create database
 
 Enter MongoDB cli:
 
@@ -37,8 +41,6 @@ Create user with read/write access:
 ### Install node modules
 
     cd explorer && npm install --production
-
-*note:If you plan to edit the codebase ignore the --production flag as it ignores dev dependecies required to run tests*
 
 ### Configure
 
@@ -93,7 +95,7 @@ sync.js (located in scripts/) is used for updating the local databases. This scr
 
 ### Wallet
 
-Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards(PoW). The wallet must be running with atleast the following flags
+Iquidus Explorer is intended to be generic so it can be used with any wallet following the usual standards. The wallet must be running with atleast the following flags
 
     -daemon -txindex
 
@@ -101,21 +103,6 @@ Iquidus Explorer is intended to be generic so it can be used with any wallet fol
 
     BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi
     JBS: JZp9893FMmrm1681bDuJBU7c6w11kyEY7D
-
-### Development
-
-Current version: 1.5.2
-Next planned: 1.6.0
-
-* proof of stake improvements (round 2)
-* proof of stake extraction page
-* more exchanges (market page)
-
-### Tests
-
-Jasmine is used for unit/integration tests. The tests can be executed simply with
-
-    npm test
 
 ### Known Issues
 

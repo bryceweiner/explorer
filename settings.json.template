@@ -83,11 +83,12 @@
   },
   
   // market settings
+  //supported markets: bittrex, poloniex, yobit, empoex
+  //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "DRK",
+    "coin": "JBS",
     "exchange": "BTC",
-    "poloniex": true,
-    "bittrex": true,
+    "enabled": ["bittrex", "empoex"],
     "default": "bittrex"
   },
 
